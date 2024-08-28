@@ -26,7 +26,7 @@
         }
       </script>
 </head>
-<body class="max-w-screen-xl mx-auto px-16">
+<body class="">
     <header>
         <nav class="flex justify-between">
             <div class="flex">
@@ -42,17 +42,23 @@
                     <li><a href="">Contact us</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="md:inline hidden">
                 <i class="fa-solid fa-magnifying-glass bg-slate-200 px-2 py-1 rounded-2xl"></i>
             </div>
-            <div class="gap-0">
+            <div class="md:inline hidden">
                 <i class="fa-solid fa-cart-shopping  bg-slate-200 px-2 py-1 rounded-2xl"></i>
             </div>
-            <button class="bg-lime-400/75 px-5 py-3 rounded-3xl">
+            <button class="md:inline hidden bg-lime-400/75 px-5 py-3 rounded-3xl">
                 Book Consult
                 <i class="fa-solid fa-arrow-up rotate-45 border-2 text-lg p-1 text-white bg-black rounded-full"></i>
             </button>
         </nav>
+
+        <div class="md:hidden absolute top-2 right-8 border-2 p-1 bg-lime-300 rounded-full ">
+            <div class="w-5 m-1 h-1 bg-black "></div>
+            <div class="w-5 m-1 h-1 bg-black"></div>
+            <div class="w-5 m-1 h-1 bg-black"></div>
+           </div>
     
     
     <!-- banner -->
@@ -64,7 +70,7 @@
             <br>
             <p class="text-zinc-500 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
             <br>
-            <button class=" bg-lime-300 border-2 rounded-xl font-bold text-lg items-center px-3 py-3">
+            <button class=" bg-lime-300 px-6 py-3 flex border-2 rounded-3xl font-bold text-lg mx-auto opacity-80">
                 View Details
                 <i class="fa-solid fa-arrow-right -rotate-45 bg-lime-500 rounded-2xl px-1 py-1 "></i>
             </button>
@@ -157,13 +163,14 @@
         </button>
 
       <div class="px-32">
-        <div class="md:py-8 p-3 text-center bg-gray-300">
+        <div class="md:py-8 px-3 text-center bg-gray-300">
           <h2 class="text-3xl font-bold">Our Featured Products</h2>
-          <p class="max-w-lg mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure modi fuga repudiandae reiciendis ducimus nesciunt ratione impedit, tempora facere. Omnis.</p>
+          <p class="max-w-lg mx-auto">The barn house captivates with its blend of rustic charm and <br>
+            modern sophistication, featuring weathered wood, sleek metal accents.</p>
       </div>
-      <div class="grid grid-cols-3 p-2">
+      <div class="grid grid-cols-2 md:grid-cols-2 p-2">
         <div class="col-start-1 col-span-2 border-2 rounded-md p-2">
-        <div class="flex gap-4 items-center">
+        <div class="flex md:flex gap-4 items-center">
           <div class="">
             <img class="w-full h-40" src="Images/img1.png" alt="">
           </div>
